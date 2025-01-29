@@ -10,7 +10,7 @@ public class Program1 {
 		System.out.println("Enter the values to the array: ");
 		int[] a = new int[5];
 		for(int i=0; i<a.length; i++) {
-			a[i]=sc.nextInt();
+			a[i]=sc.nextInt(); 
 		}
 		System.out.println(Arrays.toString(a));
 		int i=0, sum =0, sum1=0;
