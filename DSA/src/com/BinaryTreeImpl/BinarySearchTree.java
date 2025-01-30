@@ -112,15 +112,28 @@ public class BinarySearchTree {
 		return getMaxNode(n.right);
 	}
 	
-//	public void remove(int key) {
-//		root = removeNode(root, key);
-//	}
-//	
-//	private Node removeNode(Node n, int key) {
-//		if(n==null) return null;
-//		if(key<n.key) n.left = removeNode(n.left, key);
-//		else if(key>n.key) n.right = removeNode(n.right,key);
-//	}
+	public void remove(int key) {
+		root = removeNode(root, key);
+	}
+	
+	private Node removeNode(Node n, int key) {
+		if(n==null) return null;
+		if(key<n.key) n.left = removeNode(n.left, key);
+		else if(key>n.key) n.right = removeNode(n.right,key);
+		else {
+			if(n.left==null && n.right==null) n=null;
+			else if(n.left==null) n=n.right;
+			else if(n.right == null) n=n.left;
+			else {
+				Node mNode= getMaxNode(n.left);
+				int temp = mNode.key;
+				mNode.key = n.key;
+				n.key= temp;
+				n.left = removeNode(n.left,key);
+			}
+		}
+		return n;
+	}
 	
 	
 	

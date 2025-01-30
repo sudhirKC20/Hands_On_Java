@@ -22,7 +22,11 @@ public class Test {
 		b1.levelOrder();
 		System.out.println();
 		System.out.println(b1.smallestkey()) ;
-		
+		b1.remove(30);
+		b1.inOrder();
+		System.out.println();
+		b1.add(30);
+		b1.inOrder();
 	}
 
 }
