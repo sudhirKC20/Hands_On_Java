@@ -16,11 +16,13 @@ public class PascalPattern {
 
 				System.out.print(b[i][j] + " ");
 			}
+			
 			System.out.println();
 
 		}
 
 	}
+	
 
 	public static int[][] pascal(int size) {
 		int[][] a = new int[size][];
