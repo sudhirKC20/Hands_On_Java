@@ -6,12 +6,15 @@ public class Panagram {
 		System.out.println(panag(s));;
 		
 	}
+	
+	
 	public static Boolean panag(String s) {
 		if(s.length()<26) return false;
 		s=s.toLowerCase();
 		for(char ch = 'a'; ch<='z'; ch++) {
 			if(!s.contains(ch+"")) return false;
 		}
+		
 		return true;
 	}
 }
