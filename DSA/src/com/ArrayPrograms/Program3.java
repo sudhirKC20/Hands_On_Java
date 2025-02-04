@@ -15,10 +15,11 @@ public class Program3 {
 			if(prime(a[i])) System.out.print(a[i]+" "); 
 		}
 	}
+	
 	public static boolean prime(int n) {
 		return prime(n,n/2);
-		
 	}
+	
 	public static boolean prime(int n, int i) {
 		if(n<=1) return false;
 		if(i==1) return true;
