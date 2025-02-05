@@ -26,6 +26,11 @@ public class LinkedList {
 	 public void add(int index, Object e) {
 		 if(index<=-1 || index>=size()) throw new IndexOutOfBoundsException();
 		 
+		 if(index==0) {
+			 first=new Node(e,first);
+			 count++;
+			 return;
+		 }
 		 Node curr = first;
 		 for(int i=1; i<index; i++) {
 			 curr = curr.next;
@@ -47,6 +52,11 @@ public class LinkedList {
 	 public void remove(int index) {
 		 if(index<=-1 || index>=size()) throw new IndexOutOfBoundsException();
 		 
+		 if(index==0) {
+			 first=first.next;
+			 count--;
+			 return;
+		 }
 		 Node curr = first;
 		 for(int i=1; i<index; i++) {
 			 curr = curr.next;
