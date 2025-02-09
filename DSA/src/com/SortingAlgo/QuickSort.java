@@ -14,12 +14,15 @@ public class QuickSort {
 		System.out.println(Arrays.toString(a));
 		
 	}
+	
 	public static void sort(int[] a) {
 		sort(a,0,a.length-1);
 	}
+	
 	public static void sort(int[]a, int start, int end) {
 		if(start>=end) return;
 		int pivot = a[(start+end)/2];
+
 		int i=start, j=end;
 		while(i<=j) {
 			while(a[i]<pivot) i++;
