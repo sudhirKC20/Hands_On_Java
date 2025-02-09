@@ -9,13 +9,21 @@ public class DiamondPattern {
 		System.out.println("Enter the size: ");
 		int n= s.nextInt();
 		int star=1, space = n/2;
-		for(int i=0; i<=n; i++) {
+		for(int i=1; i<=n; i++) {
 			for(int j=0; j<space; j++) {
-				System.out.println(" ");
+				System.out.print(" ");
 			}
 			for(int j=0; j<star; j++) {
-				System.out.println("*");
+				System.out.print("*");
 				
+			}
+			System.out.println();
+			if(i<=n/2) {
+				space--;
+				star+=2;
+			}else {
+				star-=2;
+				space++;
 			}
 			
 		}
