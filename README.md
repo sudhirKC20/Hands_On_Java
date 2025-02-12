@@ -1,1 +1,2 @@
-# Hands_On Java Practice
+# ⏏️💻 Hands_On Java Practice 🏳️📈
+This repository contains various Java exercises and practice problems aimed at improving my programming skills. It includes solutions to algorithmic challenges, data structures, and concepts like object-oriented programming (OOP), collections, and Java libraries. The goal is to enhance my understanding of Java and prepare for coding interviews or real-world applications.
