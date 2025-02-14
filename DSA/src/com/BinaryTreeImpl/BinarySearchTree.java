@@ -117,8 +117,6 @@ public class BinarySearchTree {
 		root = removeNode(root, key);
 	}
 	
-	
-	
 	private Node removeNode(Node n, int key) {
 		if(n==null) return null;
 		if(key<n.key) n.left = removeNode(n.left, key);
@@ -137,7 +135,6 @@ public class BinarySearchTree {
 		}
 		return n;
 	}
-	
 	
 	
 	
