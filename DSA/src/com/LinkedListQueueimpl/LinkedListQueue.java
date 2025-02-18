@@ -10,6 +10,7 @@ public class LinkedListQueue {
 			c++;
 			return;
 		}
+		
 		Node curr = first;
 		while(curr.next!=null) {
 			curr = curr.next;
