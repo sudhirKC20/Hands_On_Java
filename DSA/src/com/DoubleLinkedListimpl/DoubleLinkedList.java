@@ -33,6 +33,7 @@ public class DoubleLinkedList {
 			count++;
 			return;
 		}
+		
 		Node curr = first;
 		for(int i=1; i<index; i++) {
 			curr = curr.next;
