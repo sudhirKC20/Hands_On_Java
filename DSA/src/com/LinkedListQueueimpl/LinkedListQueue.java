@@ -21,7 +21,6 @@ public class LinkedListQueue {
 	
 	public Object poll() {
 		if(isEmpty()) return null;
-		
 		Object e = first.ele;
 		first = first.next;
 		c--;
