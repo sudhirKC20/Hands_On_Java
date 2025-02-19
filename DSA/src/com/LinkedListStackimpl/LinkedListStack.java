@@ -27,7 +27,6 @@ public class LinkedListStack {
 	
 	public Object pop() {
 		if(isEmpty()) throw new EmptyStackException();
-		
 		Object e = first.ele;
 		first = first.next;
 		count--;
