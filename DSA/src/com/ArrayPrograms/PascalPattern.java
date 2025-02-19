@@ -7,16 +7,15 @@ public class PascalPattern {
 		System.out.println("Enter the size of pascal triangle:");
 		int a = s.nextInt();
 		int[][] b = pascal(a);
+		
 		for (int i = 0; i < b.length; i++) {
 			for (int j = i; j < a; j++) {
 				System.out.print(" ");
 			}
-	
 			for (int j = 0; j < b[i].length; j++) {
 
 				System.out.print(b[i][j] + " ");
 			}
-			
 			System.out.println();
 
 		}
