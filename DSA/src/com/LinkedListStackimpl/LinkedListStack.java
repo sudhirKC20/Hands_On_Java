@@ -7,7 +7,6 @@ public class LinkedListStack {
 	private int count=0;
 	
 	public void push(Object e) {
-		
 		if(first==null) 
 		{
 			first =new Node(e,null);
