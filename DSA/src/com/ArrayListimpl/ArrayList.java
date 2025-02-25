@@ -12,6 +12,7 @@ public class ArrayList {
 	public void add(int index, Object e) {
 		if(index<=-1 || index>=size())
 			throw new IndexOutOfBoundsException();
+		
 		if(c>=a.length) increase();
 		for(int i=size()-1; i>=index; i--) {
 			a[i+1]= a[i];
@@ -26,6 +27,7 @@ public class ArrayList {
 	
 	public void increase() {
 		Object[] temp = new Object[a.length+3];
+		
 		for(int i=0; i<a.length; i++) {
 			temp[i]=a[i];
 		}
