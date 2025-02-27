@@ -15,7 +15,6 @@ public class MissingNums {
 			if(i>max) max=i;
 			else if(i<min) min=i;
 		}
-		
 		for(int i=min; i<max; i++) {
 			if(!l1.contains(i)) System.out.println(i);
 		}
