@@ -24,8 +24,7 @@ public class LinkedList {
 	 }
 	 
 	 public void add(int index, Object e) {
-		 if(index<=-1 || index>=size()) throw new IndexOutOfBoundsException();
-		 
+		 if(index<=-1 || index>=size()) throw new IndexOutOfBoundsException(); 
 		 if(index==0) {
 			 first=new Node(e,first);
 			 count++;
