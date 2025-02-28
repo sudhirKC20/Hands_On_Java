@@ -16,8 +16,7 @@ public class ArrayStack {
 	
 	public void push(Object e) {
 		if(c>=a.length) increase();
-		a[c++]=e;
-		
+		a[c++]=e;s
 	}
 	
 	public Object pop() {
