@@ -12,7 +12,6 @@ public class Test {
 		s.push(50);
 		s.push(60);
 		
-		
 		System.out.println(s.pop());
 		System.out.println(s.pop());
 		System.out.println(s.pop());
