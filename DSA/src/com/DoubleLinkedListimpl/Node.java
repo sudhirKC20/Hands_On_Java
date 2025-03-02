@@ -8,7 +8,6 @@ public class Node {
 	Node(Object e) {
 		ele = e;
 	}
-
 	Node(Object e, Node p, Node n) {
 		ele = e;
 		prev = p;
