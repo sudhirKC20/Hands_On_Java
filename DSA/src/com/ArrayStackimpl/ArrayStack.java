@@ -20,6 +20,7 @@ public class ArrayStack {
 	}
 	
 	public Object pop() {
+		
 		if(isEmpty()) throw new EmptyStackException();
 		c--;
 		Object e= a[c];
