@@ -11,7 +11,6 @@ public class Automorphic {
 		 int temp = n;
 		 int sq = n*n;
 		 boolean flag = true;
-		 
 		 while(n!=0) {
 			 if(n%10!=sq%10) {
 				 flag = false;
