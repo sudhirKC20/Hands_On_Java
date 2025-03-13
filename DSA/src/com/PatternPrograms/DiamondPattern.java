@@ -10,6 +10,7 @@ public class DiamondPattern {
 		int n= s.nextInt();
 		int star=1, space = n/2;
 		for(int i=1; i<=n; i++) {
+			
 			for(int j=0; j<space; j++) {
 				System.out.print(" ");
 			}
