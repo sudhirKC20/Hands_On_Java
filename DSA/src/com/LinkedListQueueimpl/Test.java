@@ -17,6 +17,5 @@ public class Test {
 		System.out.println(q.poll());
 		System.out.println(q.poll());
 		System.out.println(q.peek());
-
 	}
 }

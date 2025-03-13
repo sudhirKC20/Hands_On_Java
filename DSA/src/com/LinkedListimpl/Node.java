@@ -6,8 +6,7 @@ public class Node {
 	
 	Node(Object e){
 		ele=e;
-	}
-	
+	}	
 	Node(Object e, Node n){
 		ele =e;
 		next = n;

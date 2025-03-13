@@ -16,7 +16,6 @@ public class ArrayQueue {
 		}
 		a=temp;
 	}
-	
 	public int size() {
 		return c;
 	}
